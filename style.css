@@ -1,23 +1,65 @@
-header{
-    display:flex;
-    align-items: center;
-    
+*{margin:0;
+  box-sizing:border-box;
+  padding: 0;
 }
-ul{
-display:flex;
+header, .head, ul, li,.services, .service, .galerie {
+    display: flex;
+}
+header{
+    width:100%;
+    background:black;
+    color:white; 
+}
+
+.head{
+    justify-content: space-around;
+    width: 100%;
+}
+.boutton{
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width:80%; 
 
 }
-.htlm{
-    display:flex;
+.reseauxSociaux{
+    width:20%;
+    justify-content: space-between;
+    
 }
+.menu>ul>li>a{
+    color:white;
+}
+.bandeau{
+    background:orange;
+    color:azure;
+    font-family: helvetica;
+    justify-content: center;
+}
+
+
+.accueil{
+    width:100%;
+    background-image:url(img/h5-gallery-img-3-477x477.jpg);
+    background-size: cover;
+    }
+.accueil>img{
+    display:block;
+    width:100%;
+    margin:auto;
+}
+
+
+
+
 li{
-    display:flex;
     text-align: center;
 }
 
 .menu ul{
 display: flex;
 list-style-type:none;
+color:white;
 }
 li{
 
@@ -26,4 +68,15 @@ margin-left: 40px;
 
 div{
     display: flex;
+}
+  
+.galerie{
+    width:100%;
+}
+.service{
+    flex-direction: column;
+}
+
+.service>img{
+    width: 100px;
 }
