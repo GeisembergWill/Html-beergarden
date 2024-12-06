@@ -2,81 +2,133 @@
   box-sizing:border-box;
   padding: 0;
 }
-header, .head, ul, li,.services, .service, .galerie {
+:root{
+    font-family: Oswald;
+}
+
+header, .head, ul, li, .services, .service, .galerie, .traditions, div, .menu ul{
     display: flex;
 }
-header{
+
+header, .head, .accueil, .accueil>img, .galerie{
     width:100%;
+}
+
+.article, .pub, .photoTonneau, .chopp{
+width:50%;
+}
+
+.accueil, .photoTonneau, .chopp{
+background-size: cover;   
+}
+
+.bandeau, .photoTonneau, .chopp{
+justify-content: center;    
+}
+
+header, head, .accueil{
     background:black;
     color:white; 
 }
-
+/********************HEADER********************/
 .head{
     justify-content: space-around;
-    width: 100%;
+    
 }
 .boutton{
     align-items: center;
     text-align: center;
     justify-content: space-between;
     width:80%; 
-
 }
+/********************ACCUEIL********************/
 .reseauxSociaux{
     width:20%;
     justify-content: space-between;
-    
 }
 .menu>ul>li>a{
     color:white;
 }
-.bandeau{
-    background:orange;
-    color:azure;
-    font-family: helvetica;
-    justify-content: center;
-}
-
 
 .accueil{
-    width:100%;
     background-image:url(img/h5-gallery-img-3-477x477.jpg);
-    background-size: cover;
-    }
+}
+
 .accueil>img{
     display:block;
-    width:100%;
     margin:auto;
 }
-
-
-
-
 li{
     text-align: center;
+    margin-left: 40px
 }
-
 .menu ul{
-display: flex;
 list-style-type:none;
 color:white;
 }
-li{
 
-margin-left: 40px;
+
+/********************BANDEAU********************/
+.bandeau{
+    height: 3em;
+    background:orange;
+    color:azure;
+    text-align: center;
+    font-size:40px;
+    justify-items: center;
+}
+/********************TRADITIONS********************/
+.traditions{
+    flex-wrap: wrap;
+}
+.article{
+    justify-content: center;
+}
+.photoTonneau{
+    background-image:url(img/h5-el-holder-img-1-1.jpg);
+}
+.chopp{
+    background-image:url(img/h5-el-holder-img-2.jpg);
+}
+/********************GALERIE********************/
+.galerie>img{
+    width:25%;
 }
 
-div{
-    display: flex;
-}
-  
-.galerie{
-    width:100%;
-}
+/********************SERVICES********************/
+
 .service{
     flex-direction: column;
+    align-items: center;
 }
-
 .service>img{
     width: 100px;
 }
+
+/********************PARALLAXE********************/
+
+
+
+
+
+
+/********************IFRAME********************/
+
+
+
+
+
+
+
+/********************FOOTER********************/
+
+
+
+
+
+
+
+
+
+
+
